@@ -1,0 +1,149 @@
+software  prensible
+KISS, YAGNI, SOLID, CLEAN CODE, SPAGETTI CODE, DUMMY CODE
+
+KISS NEDİR ?
+"KISS" kısaltması, "Keep It Simple, Stupid" (Basit Tut, Aptal!) anlamına gelir. 
+Bu, bir yazılım mühendisliği ve programlama felsefesi ifadesidir ve kod yazarken uygulanması tavsiye edilen bir ilkedir.
+KISS prensibi, yazılımın karmaşıklığından kaçınmayı ve mümkün olduğunca basit, anlaşılır ve sade bir tasarımı hedeflemeyi vurgular. 
+Bu şekilde, kodun anlaşılması, bakımı ve geliştirilmesi daha kolay hale gelir. 
+Basit ve sade bir kodun, hataların ve sorunların nedenini belirlemek ve düzeltmek daha kolaydır.
+JavaScript dilinde KISS prensibini uygulamak için aşağıdaki ipuçlarına dikkat edebilirsiniz:
+İşlevlerinizi ve kod bloklarınızı mümkün olduğunca kısa ve öz tutun.
+Tek bir işi yapacak şekilde işlevler oluşturun ve karmaşık yapılar yerine basit ve düzgün işleyen işlevler kullanın.
+Gereksiz yere karmaşık algoritmalar kullanmak yerine, daha basit ve daha anlaşılır yöntemleri tercih edin.
+Kod tekrarını en aza indirin. Aynı işi yapan kodları tekrarlamaktansa, ortak işlevler ve modüller kullanın.
+Fazla yorum eklemek yerine, kodunuzun kendini açıklayıcı ve anlaşılır olmasına özen gösterin.
+Kütüphane ve çerçeveler kullanın. Önceden yazılmış kütüphane ve çerçeveler, birçok işlevselliği size sunar ve tekrar teker edilmesini önler.
+Değişken, fonksiyon ve sınıf adlarını açıklayıcı ve anlaşılır şekilde seçin.
+Kodunuzu KISS prensibine göre tasarlarsanız, hem kod yazma süreci daha hızlı ve verimli olur, hem de diğer geliştiricilerin ve gelecekteki sürümlerdeki değişikliklerin yönetimi kolaylaşır. 
+Daha az hata yaparsınız ve daha az zaman harcarsınız, bu da projenizin başarılı bir şekilde tamamlanmasına yardımcı olur.
+
+
+YAGNI NEDİR?
+"YAGNI," "You Aren't Gonna Need It" (Ona İhtiyacınız Olmayacak) ifadesinin kısaltmasıdır. 
+YAGNI, yazılım mühendisliği ve programlama dünyasında bir ilke ve yaklaşım olarak kullanılır.
+YAGNI prensibi, yazılım geliştirirken veya kod yazarken, şu an için gerekli olmayan işlevselliği veya özellikleri eklemekten kaçınmayı vurgular. 
+Bu ilke, gelecekte belki kullanılabilir olabilecek özellikleri önceden tahmin etmek yerine, şu anki gereksinimlere odaklanmayı önerir. 
+Dolayısıyla, gereksiz karmaşıklığı ve fazladan kodu önler.
+JavaScript dilinde YAGNI prensibini uygulamak için aşağıdaki ipuçlarına dikkat edebilirsiniz:
+Sadece şu an için ihtiyacınız olan işlevleri ekleyin. 
+Gelecekte belki lazım olur diye ekstra işlevleri şimdiden kodunuza dahil etmek yerine, şu anki gereksinimleri karşılayacak şekilde kod yazın.
+Önsezilere dayanarak gereksiz kodlar eklemekten kaçının. Kullanıcı gerçekten ihtiyaç duymadıkça veya belirli bir işlevsellik doğrulanmadıkça, onu kodunuza eklemeyin.
+Basit ve az işlem yapan kod parçacıkları tercih edin. Karmaşık ve çok yönlü kodlardan kaçının, özellikle şu anki ihtiyaçları aşan kodlar yazmaktan kaçının.
+İşlevlerinizi gereksiz yere abartmadan ve aşırı genelleştirmeden oluşturun. Sadece şu anki problemi çözmek için yeterli olan işlevleri yazın.
+"Belki bir gün işimize yarar" düşüncesiyle gereksiz modüller veya kütüphaneler eklemekten kaçının. 
+Sadece şu anki projenin ihtiyaçlarına uygun olanları kullanın.
+YAGNI, yazılım projelerinin daha basit ve sürdürülebilir olmasına yardımcı olur. 
+Gereksiz işlevselliği önleyerek, projenin genel karmaşıklığını azaltır ve kodun daha kolay anlaşılmasını ve bakımını sağlar. 
+Ayrıca, zaman ve kaynak tasarrufu sağlayarak verimliliği artırır.
+
+
+SOLID NEDİR?
+SOLID, yazılım tasarım prensiplerini tanımlayan bir akronimdir. 
+Robert C. Martin tarafından önerilen bu prensipler, nesne yönelimli programlama (Object-Oriented Programming, OOP) ve yazılım tasarımının temel kavramlarından biridir. 
+
+S - Single Responsibility Principle (Tek Sorumluluk Prensibi):
+Bir sınıfın yalnızca bir nedeni olmalıdır değişiklik yapmak için. 
+Yani bir sınıfın yalnızca bir işlevi veya sorumluluğu olmalıdır. Bu, sınıfların ve modüllerin daha az bağımlı ve daha anlaşılır olmasını sağlar.
+
+O - Open/Closed Principle (Açık/Kapalı Prensibi):
+Bir sınıfın davranışları, kaynak kod değişikliğine kapatılmalı, ancak yeni davranışlar eklemek için açık olmalıdır. 
+Varolan kodu değiştirmeden, yeni işlevselliği kolayca eklemeyi mümkün kılar.
+
+L - Liskov Substitution Principle (Liskov Yerine Geçme Prensibi):
+Alt sınıflar, üst sınıfların yerine geçebilmelidir, yani alt sınıflar, üst sınıfların sunduğu davranışları bozmadan veya değiştirmeden kullanabilmelidir. 
+Bu, kalıtımın doğru bir şekilde kullanılmasını ve sınıflar arasındaki ilişkilerin sağlam olmasını sağlar.
+
+I - Interface Segregation Principle (Arayüz Ayrımı Prensibi):
+Bir sınıfın, kendi ihtiyaçları için kullanmadığı arayüzleri uygulamaması gerektiğini belirtir. 
+Yani, bir sınıf, ihtiyaç duymadığı işlevleri içeren geniş arayüzleri uygulamamalıdır. Bunun yerine, daha küçük ve özelleştirilmiş arayüzleri tercih edilmelidir.
+
+D - Dependency Inversion Principle (Bağımlılık Ters Çevirme Prensibi):
+Yüksek seviyeli modüller, düşük seviyeli detaylara bağlı olmamalıdır. 
+Bu prensip, bağımlılıkların soyutlamalar aracılığıyla yönetilmesini ve yüksek düzeydeki modüllerin düşük düzeydeki detaylardan bağımsız olmasını teşvik eder.
+
+
+CLEAN CODE NEDİR?
+Clean code (temiz kod), yazılım geliştirme dünyasında kodun anlaşılır, basit, sürdürülebilir ve bakımı kolay bir şekilde yazılmasını ifade eden bir terimdir
+Anlaşılır ve açıklayıcı, Küçük ve sade işlevler, Tek sorumluluk prensibi, İyi isimlendirme, Düzenli biçimlendirme, 
+Yorumlar ve belgeleme, Düşük bağımlılık, Tekrarlanan kodun önlenmesi şeklinde özellikleri bulunuyor.
+
+
+SPAGETTI CODE NEDİR?
+Spaghetti code, yazılım geliştirme ve programlama dünyasında kullanılan bir terimdir ve olumsuz bir anlam taşır. 
+Spaghetti code, bir yazılım projesinde kodun düzensiz, karmaşık, anlaşılması güç ve bakımı zor olan bir şekilde yazılması durumunu tanımlar. 
+Bu tür kod, adını spagetti yemeğinin karışık ve düzensiz görüntüsünden alır.
+
+
+DUMMY CODE NEDİR?
+Dummy code (sahte kod), genellikle veri analizi ve makine öğrenimi gibi alanlarda kullanılan istatistiksel analizlerde veya veri işlemede kullanılan yapay değişkenlere verilen addır. 
+Dummy kodlama, kategorik veya nominal verileri sayısal verilere dönüştürmek için kullanılan bir yöntemdir.
+
+
+JSON NEDİR? 
+JSON, anahtar-değer çiftlerinden oluşan bir koleksiyonu temsil eder. JSON verileri iki ana yapıyı içerebilir:
+Nesneler (Objects): JSON nesneleri, anahtar-değer çiftlerinin kümesini içeren süslü parantezler {} içinde tanımlanır. 
+Anahtarlar (keys) bir metin olarak ve değerler (values) herhangi bir JSON veri türü (sayı, metin, dizi, başka bir nesne veya boolean) olabilir.
+{
+  "name": "John Doe",
+  "age": 30,
+  "isStudent": true,
+  "hobbies": ["reading", "coding", "swimming"]
+}
+Diziler (Arrays): JSON dizileri, bir dizi değeri kare parantezler [] içinde tanımlar. 
+Diziler, birden çok değeri sıralı bir şekilde tutar ve her bir değer bir JSON nesnesi, metin, sayı veya başka bir dizi olabilir.
+[
+  { "name": "Apple", "price": 1.5 },
+  { "name": "Banana", "price": 2.0 },
+  { "name": "Orange", "price": 1.0 }
+]
+
+
+XML NEDİR ?
+XML, HTML gibi bir işaretleme dilidir, ancak HTML'den farklı olarak içeriği tanımlamak için kendine özgü etiketler kullanır. 
+XML, metin tabanlı olduğu için insanlar tarafından da okunması ve anlaşılması kolaydır. 
+Aynı zamanda bilgisayarlar arasında veri alışverişinde kullanılmak üzere tasarlanmıştır.
+
+
+JSON İLE XML ARASINDAKİ FARK ?
+Sözdizimi ve Yapı:
+JSON, JavaScript tabanlı bir veri biçimidir ve daha basit ve doğrusal bir yapıya sahiptir. Veriler, nesneler ve diziler olarak düzenlenir.
+XML, metin tabanlı bir veri biçimidir ve açık metin formatıdır. Veriler, etiketler ve ağaç yapısı ile düzenlenir.
+
+Okunabilirlik:
+JSON, insanlar tarafından daha kolay okunabilir ve anlaşılabilir bir yapıya sahiptir. JSON verileri, dizeler, sayılar, diziler ve nesneler gibi
+XML, etiketlerle tanımlanan yapısı nedeniyle insanlar tarafından anlaşılması biraz daha zordur.
+
+Veri Boyutu:
+JSON, XML'e göre daha küçük boyutlarda veriler üretir. Bu nedenle, JSON, veri transferi sırasında XML'den daha hızlıdır ve daha az bant genişliği kullanır.
+
+Dil Bağımsızlık:
+JSON, JavaScript dışında diğer programlama dillerinde de kullanılabilir. JSON verileri, birçok programlama dilinde desteklenen nesne ve dizi yapılarına benzer şekilde işlenebilir.
+XML, herhangi bir programlama diline bağlı olmadan verileri temsil edebilir, ancak JavaScript gibi dillerde işlemek için ek işlemler gerektirir.
+
+Atribütler:
+JSON'da, nesnelerde doğrudan özellikler ve değerler kullanılırken, XML'de etiketler ve atribütler kullanılarak veriler tanımlanır.
+
+Popülarite:
+JSON, son yıllarda web servisleri ve veri alışverişi için daha popüler hale gelmiştir. JSON'un daha basit ve hafif yapısı, tercih edilmesini sağlar.
+XML, geçmişte yaygın olarak kullanılan bir veri biçimi olmasına rağmen, günümüzde JSON'un popülaritesi nedeniyle daha az tercih edilmektedir.
+
+Genel olarak, JSON, daha basit ve hafif bir veri biçimi olarak web uygulamaları ve servislerinde daha yaygın olarak kullanılırken, 
+XML daha karmaşık veri yapıları ve özellikleri gerektiren durumlarda tercih edilebilir.
+
+
+ANONYMOUS FUNCTION İLE ARROW FUNCTION ARASINDAKİ FARK
+Anonymous fonksiyonlar, genellikle function anahtar kelimesi kullanılarak tanımlanır ve bir isimleri yoktur. 
+Örneğin:
+var anonymous = function() {
+  // Fonksiyonun işlevi
+};
+Arrow fonksiyonları ise daha yeni bir JavaScript sözdizimidir ve daha kısa bir şekilde fonksiyonları tanımlamaya olanak tanır.
+ Arrow fonksiyonları => (ok işareti) kullanılarak tanımlanır ve genellikle bir ifade döndürmek için kullanılır. 
+Örneğin:
+var arrow = () => {
+  // Fonksiyonun işlevi
+};
+Anonymous fonksiyonlar ve arrow fonksiyonları benzer işlevselliğe sahip olsa da, arrow fonksiyonları daha kısa bir sözdizimine sahiptir ve this bağlamını otomatik olarak bağlar. 
+Ancak arrow fonksiyonları isimlendirilemez ve constructor olarak kullanılamaz. 
+
