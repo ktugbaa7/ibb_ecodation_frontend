@@ -959,22 +959,28 @@ let userListener=()=>{
     let listenerParag=document.getElementById("parag_list");
     listenerParag.addEventListener("click",function(e){
         //alert(e.preventDefault+" "+e.target);
-        document.getElementById("log_admin").innerHTML="takip edildi";
-        //$("#log_admin").html("takip edildi");
+        //document.getElementById("log_admin").innerHTML="takip edildi";
+        $("#log_admin").html("takip edildi");
     });
 }
 userListener()
 
-////////////////////////////////////////////////////////   
+////////////////////////////////////////////////////////
 // localStorage (Bireysel)
 
 ////////////////////////////////////////////////////////
-// jquery ajax GET/POST
+// jQuery
+
 ////////////////////////////////////////////////////////
+// jquery ajax GET/POST
+// VKI 
 // KDV hesaplaması: JS
+// jquery ajax GET/POST
+// Login Validation
+// jquery hangi tuşa bastım bana söylesin. 
 
+////////////////////////////////////////////////////////
 // REACT
-
 
 
 
