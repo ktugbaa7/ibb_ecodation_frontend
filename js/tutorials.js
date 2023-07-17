@@ -935,9 +935,35 @@ let domData2 = () => {
 // paragrag_id2 adından bir paragraf olsun bu paragrafa kullanıcı mouse ile tıkladığında
 // aşağıda <span id="special_id"></span> içine tıklandı veya paragraf üstüne gelindi. Ödev
 
+
+
+
+// Butona tıkladığımızda kullanıcı soru sorsun
+// Farklı bir sayfaya gitmek ister misiniz ?
+// evet farklı bir sayfaya redirect 
+// değilse alert versin 
+
+let outSite = () => {
+    //alert("deneme");
+    let userInformation =
+        window.confirm("Farklı bir sayfaya gitmek ister misiniz ?")
+            ? window.location="https://www.ecodation.com"
+            : window.alert("Bu sayfada kalındı");
+}
+
+
 ////////////////////////////////////////////////////////   
 // listener
-
+//  Ödev: Kullanıcı bu paragrafa kaç kere tıkladı ?
+let userListener=()=>{
+    let listenerParag=document.getElementById("parag_list");
+    listenerParag.addEventListener("click",function(e){
+        //alert(e.preventDefault+" "+e.target);
+        document.getElementById("log_admin").innerHTML="takip edildi";
+        //$("#log_admin").html("takip edildi");
+    });
+}
+userListener()
 
 ////////////////////////////////////////////////////////   
 // localStorage (Bireysel)
