@@ -869,8 +869,8 @@ let noParameterCallApplyBind=()=>{
     let deneme=functionOtherObject.bind(objectData);
     deneme();
 }
-noParameterCallApplyBind();
-document.writeln(`<br/>`)
+// noParameterCallApplyBind();
+// document.writeln(`<br/>`)
 
 let parameterCallApplyBind=()=>{
 
@@ -889,13 +889,20 @@ let parameterCallApplyBind=()=>{
     let deneme=functionOtherObject.bind(objectData,"Mızrak");
     deneme();
 }
-parameterCallApplyBind();
+// parameterCallApplyBind();
 
 ////////////////////////////////////////////////////////
 // event
+let eventFunction=() => {
+    alert( "deneme")
+}
+////////////////////////////////////////////////////////    
+
 // listener
 // dom
 // localStorage (Bireysel)
+
+////////////////////////////////////////////////////////
 // jquery ajax GET/POST
 ////////////////////////////////////////////////////////
 // KDV hesaplaması: JS
