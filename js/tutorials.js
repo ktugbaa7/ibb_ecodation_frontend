@@ -897,9 +897,49 @@ let eventFunction=() => {
     alert( "deneme")
 }
 ////////////////////////////////////////////////////////    
-
-// listener
 // dom
+let newDataDate = () => {
+    // Override: Ezmek
+    // alert("dom");
+    // let now = document.getElementById("text_data");
+    // HTML
+    // now.innerHTML ="<b><i><mark>"+ new Date().getFullYear(); +"</mark></i></b>";
+    // now.innerHTML = `<b><i><mark> ${new Date().getFullYear()} </mark></i></b>`;
+    // QUERYSELECTOR id #   class .
+    let now = document.querySelector("#text_data");
+
+    // TEXT
+    // now.innerText = `<b><i><mark> ${new Date().getFullYear()} </mark></i></b>`;
+    now.innerText = `${new Date().getFullYear()}`;
+
+    //CSS
+    now.style.color = "yellow";
+    now.style.backgroundColor = "black";
+    now.style.padding = "5rem";
+}
+let domData2 = () => {
+    //alert("çalıştı");
+
+    // ID
+    //let domUserData=document.getElementById("dom_id").innerText="ID";
+
+    // Class
+    //let domUserData=document.getElementsByClassName("dom_class")[0].innerText="class Data";
+
+    // Tag name
+    // let domUserData=document.getElementsByTagName("p")[1].innerText="class Data";
+}
+
+
+
+// paragrag_id2 adından bir paragraf olsun bu paragrafa kullanıcı mouse ile tıkladığında
+// aşağıda <span id="special_id"></span> içine tıklandı veya paragraf üstüne gelindi. Ödev
+
+////////////////////////////////////////////////////////   
+// listener
+
+
+////////////////////////////////////////////////////////   
 // localStorage (Bireysel)
 
 ////////////////////////////////////////////////////////
