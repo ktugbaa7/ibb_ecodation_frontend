@@ -967,6 +967,26 @@ userListener()
 
 ////////////////////////////////////////////////////////
 // localStorage (Bireysel)
+// veriler bizim için önemlidir
+// verileri saklarız. Database, Browser
+
+let localStorageData = () => {
+    const adi = localStorage.setItem("name", "hamit");
+    const soyadi = localStorage.setItem("surname", "mızrak");
+    console.log(localStorage);
+
+    const getAdi =localStorage.getItem("name");
+    alert(getAdi);
+
+    //RemoveItem
+    //localStorage.removeItem("name");
+
+    //clear
+    //localStorage.clear();
+}
+//localStorageData();
+
+
 
 ////////////////////////////////////////////////////////
 // jQuery
