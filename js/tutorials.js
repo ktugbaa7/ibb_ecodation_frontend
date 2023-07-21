@@ -991,16 +991,57 @@ let localStorageData = () => {
 ////////////////////////////////////////////////////////
 // jQuery
 
+// https://www.toptal.com/developers/keycode
+// jquery hangi tuşa bastım bana söylesin.
+
+let userJqueryKey = () => {
+
+    // Jquery hazırlanması
+    $(document).ready(function () {
+        $(document).keydown(function (userButton) {
+            console.log(userButton);
+            console.log(userButton.keyCode);
+            console.log(typeof userButton.keyCode);
+            // keyCode (13) => ENTER
+            // https://www.toptal.com/developers/keycode
+
+            // Browser sen bir şey yapma, yaparsam ben yaparım.
+            userButton.preventDefault();
+
+            // ENTER BASILDI
+            //if(userButton.ctrylKey){} // ctrl basılarak tıklanmış
+            if (userButton.keyCode == 13) {  // keyCode: her karakterin sayısıdır.
+                alert("ENTER Bastınız.")
+                console.log("ENTER Bastınız.")
+            }
+
+        }) // end keydown
+    }); // end document ready
+
+}; //end userJqueryKey
+userJqueryKey()
+
 ////////////////////////////////////////////////////////
-// jquery ajax GET/POST
-// VKI 
-// KDV hesaplaması: JS
-// jquery ajax GET/POST
-// Login Validation
-// jquery hangi tuşa bastım bana söylesin. 
+// V.K.I (LocalStorage)
+// kullanıcıdan alınan kilo ve boy verileri formda inputtan aldıktan sonra
+// Formül : Kilo/ ((Boy)/100)^2
+//eğer bu formülde;
+// 18 den düşük çıkarsa : düşük kilolu
+// 18dahil-24 arasıysa: normal kilolu
+// 24dahil-29 arasıysa: fazla kilolu
+// 29dahil-32 arasıysa: obez 
+// 32 den fazla ise: aşırı kilolu
+
+//VKI butonu olsun. bu butona bastığımızda modal formu açılsın.
+////////////////////////////////////////////////////////
+// jquery ajax GET/POST (Backend: Java API, )
+// Dockerfile
 
 ////////////////////////////////////////////////////////
 // REACT
+// K.D.V hesaplaması: JS - ve React Yapılacak
+// Login Validation
+
 
 
 
