@@ -1033,6 +1033,26 @@ userJqueryKey()
 // 32 den fazla ise: aşırı kilolu
 
 //VKI butonu olsun. bu butona bastığımızda modal formu açılsın.
+$(document).ready(function () {
+    let vkiFormule = () => {
+
+        //EVENT
+        $("#vki_submit_id").click(function () {
+            // Boy ve Kilo
+            let weight, height;
+            weight = jQuery.trim($("#weight_id").val());
+            alert(weight);
+
+            height = jQuery.trim($("#height_id").val());
+            alert(height)
+
+        }); // click
+
+    } //end vkiFormule
+    vkiFormule()
+}); // end document ready
+
+
 ////////////////////////////////////////////////////////
 // jquery ajax GET/POST (Backend: Java API, )
 // Dockerfile
