@@ -1033,6 +1033,9 @@ userJqueryKey()
 // 32 den fazla ise: aşırı kilolu
 
 //VKI butonu olsun. bu butona bastığımızda modal formu açılsın.
+// input: boy
+// submit button
+// NOT: Kilo(weight), Boy(height), formül sonucu(formulaResult) ve Sonuç(result) LocalStorage olarak saklansın.
 $(document).ready(function () {
     let vkiFormule = () => {
 
@@ -1041,10 +1044,35 @@ $(document).ready(function () {
             // Boy ve Kilo
             let weight, height;
             weight = jQuery.trim($("#weight_id").val());
-            alert(weight);
+            //alert(weight);
+             // validation
 
+              // eğer input içinde değer varsa hata mesajı silinsin.
+            // Kullanıcı Sayı girmezse sayı girmediniz hatasını versin (REGEX)
+            if (weight == "") {
+                $('#validation_weight').html("Kilosu boş geçilemez");
+            } else if (jQuery.isNumeric(weight) == false) {
+                 // Kullanıcı Sayı girmezse sayı girmediniz hatasını versin (REGEX)
+                $('#validation_weight').html("Sayı girmelisiniz");
+            }
+
+             // const adi = localStorage.setItem("name", prompt("adınız giriniz"));
+            // const soyadi = localStorage.setItem("surname", "Mızrak");
+            // console.log(localStorage);
+            // const getAdi = localStorage.getItem("name");
+            // alert(getAdi);
+
+             // BOY
             height = jQuery.trim($("#height_id").val());
-            alert(height)
+            // alert(height)
+            if (height == "") {
+                $('#validation_height').html("Boy boş geçilemez");
+            } else if ($.isNumeric(weight) == false) {
+                 // Kullanıcı Sayı girmezse sayı girmediniz hatasını versin (REGEX)
+                $('#validation_weight').html("Sayı girmelisiniz");
+            }
+            // eğer input içinde değer varsa hata mesajı silinsin.
+            // Kullanıcı Sayı girmezse sayı girmediniz hatasını versin (REGEX)
 
         }); // click
 
